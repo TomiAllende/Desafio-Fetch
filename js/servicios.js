@@ -25,3 +25,26 @@ swal({
     button: "Aww yiss!",
   });
 }
+
+//Hago Fetch
+
+let url= "https://pokeapi.co/docs/v2#pokemon"
+
+fetch(url)
+.then((response) => {
+  return response.json ()
+})
+
+.then((json) => {
+  console.log(json)
+
+  let pokemones = json
+
+  pokemones.forEach(pokemones => {
+
+    const {nombre, imagen, color} = pokemones
+    
+  });
+}
+
+)
